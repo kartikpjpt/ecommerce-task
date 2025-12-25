@@ -85,8 +85,6 @@ export function ProductCard({ product, isFavorite, onToggleFavorite, observerRef
                     className='w-full rounded-sm bg-brand-green px-4 py-2 text-sm font-semibold text-brand-green-foreground transition-opacity hover:opacity-90'
                     onClick={(e) => {
                         e.stopPropagation();
-                        // Add to cart logic will be implemented
-                        console.log('Add to cart:', product.id);
                     }}>
                     Add to Cart
                 </button>
