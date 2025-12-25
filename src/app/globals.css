@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-background: hsl(210 20% 98%);
+    --color-foreground: hsl(0 0% 20%);
+    --color-card: hsl(0 0% 100%);
+    --color-card-foreground: hsl(0 0% 20%);
+    --color-popover: hsl(0 0% 100%);
+    --color-popover-foreground: hsl(0 0% 20%);
+    --color-primary: hsl(217 91% 60%);
+    --color-primary-foreground: hsl(0 0% 100%);
+    --color-secondary: hsl(210 40% 96.1%);
+    --color-secondary-foreground: hsl(0 0% 20%);
+    --color-muted: hsl(210 40% 96.1%);
+    --color-muted-foreground: hsl(0 0% 45%);
+    --color-accent: hsl(38 92% 50%);
+    --color-accent-foreground: hsl(0 0% 100%);
+    --color-destructive: hsl(0 84.2% 60.2%);
+    --color-destructive-foreground: hsl(0 0% 100%);
+    --color-border: hsl(214.3 31.8% 91.4%);
+    --color-input: hsl(214.3 31.8% 91.4%);
+    --color-ring: hsl(217 91% 60%);
+    --color-success: hsl(142 71% 45%);
+    --color-brand-green: hsl(130 47% 39%);
+    --color-brand-green-foreground: hsl(0 0% 100%);
+    --radius-default: 0.125rem;
+}
+
+@layer base {
+    .dark {
+        --color-background: hsl(222.2 84% 4.9%);
+        --color-foreground: hsl(210 40% 98%);
+        --color-card: hsl(222.2 84% 4.9%);
+        --color-card-foreground: hsl(210 40% 98%);
+        --color-popover: hsl(222.2 84% 4.9%);
+        --color-popover-foreground: hsl(210 40% 98%);
+        --color-primary: hsl(210 40% 98%);
+        --color-primary-foreground: hsl(222.2 47.4% 11.2%);
+        --color-secondary: hsl(217.2 32.6% 17.5%);
+        --color-secondary-foreground: hsl(210 40% 98%);
+        --color-muted: hsl(217.2 32.6% 17.5%);
+        --color-muted-foreground: hsl(215 20.2% 65.1%);
+        --color-accent: hsl(217.2 32.6% 17.5%);
+        --color-accent-foreground: hsl(210 40% 98%);
+        --color-destructive: hsl(0 62.8% 30.6%);
+        --color-destructive-foreground: hsl(210 40% 98%);
+        --color-border: hsl(217.2 32.6% 17.5%);
+        --color-input: hsl(217.2 32.6% 17.5%);
+        --color-ring: hsl(212.7 26.8% 83.9%);
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
